@@ -2,6 +2,7 @@ package test.customer;
 
 import java.io.*;
 import java.text.DecimalFormat;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -46,7 +47,10 @@ public class BuyProductServlet extends HttpServlet {
 				System.out.println(pbstring);
 				BuyProdBean bpb = new BuyProdBean();
 				CustomerBean cb = (CustomerBean) hs.getAttribute("cbean");
-				bpb.setId(cb.getUname()+cb.getPword());
+				// LocalDateTime
+				LocalDateTime ldt =  LocalDateTime.now();
+				System.out.print(ldt);
+				bpb.setId(cb.getUname()+cb.getPword()+ldt);
 				bpb.setProdlist(pbstring);
 				bpb.setPrice(Double.parseDouble(df.format(sum)));
 				

@@ -19,6 +19,7 @@ out.println("<br> welcome " + ab.getFname()+" &nbsp "+ ab.getLname()+" <br> ");
 
 %>
 
+<a href="viewsales">View Sale History </a><br> 
 <a href="addproduct.html">Add Product </a><br> 
 <a href="viewproduct">View Product </a><br> 
 <a href="logout">LogOut</a><br> 
