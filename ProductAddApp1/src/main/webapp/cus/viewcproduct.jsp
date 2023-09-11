@@ -30,6 +30,10 @@ while(it.hasNext()){
 
 
 %>
+<br> 
+<a href="viewcart"> Go To Cart </a> <br>
+
+<a href="cuslogout"> Logout </a>
 
 </body>
 </html>

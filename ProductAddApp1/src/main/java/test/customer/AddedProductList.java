@@ -17,5 +17,15 @@ public class AddedProductList {
 		  return pbs; 
 	  }
 	  
+	  
+	  public static void removeProduct(ProductBean pb) {
+		  pbs.remove(pb);
+		  System.out.println("after removing product " +pbs);
+	  }
+	  
+	  public static void clear() {
+		  pbs.clear();
+		  System.out.println(pbs);
+	  }
 
 }
